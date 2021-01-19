@@ -5,6 +5,7 @@ from . import views
 app_name = 'hello'
 
 urlpatterns = [
+    path('', views.sessfun),
     path('', TemplateView.as_view(template_name='hello/main.html')),
     path('cookie', views.cookie),
     path('sessfun', views.sessfun),
